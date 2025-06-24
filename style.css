@@ -1,10 +1,111 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('https://cdn.pixabay.com/photo/2016/03/09/09/30/galaxy-1245690_1280.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>BTS SIO - Thème Informatique</title>
+    <style>
+        /* --- Base --- */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f;
+            color: #33ff33;
+            font-family: 'Courier New', Courier, monospace;
+            background-image: radial-gradient(#222 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        /* --- Animation texte clignotant --- */
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        header {
+            background: #000;
+            border-bottom: 2px solid #33ff33;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            animation: blink 1.5s infinite;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: rgba(0, 255, 0, 0.05);
+            border: 1px solid #33ff33;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #00ffcc;
+            border-bottom: 1px dashed #00ffcc;
+            padding-bottom: 5px;
+        }
+
+        p, ul {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: square;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+
+        /* --- Bouton style néon --- */
+        .btn {
+            background-color: transparent;
+            border: 2px solid #00ffcc;
+            color: #00ffcc;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #00ffcc;
+            color: #000;
+            box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BTS SIO - Terminal Informatique</h1>
+    </header>
+
+    <div class="container">
+        <h2>🎯 Objectifs</h2>
+        <p>Former des techniciens capables de développer, maintenir ou sécuriser des systèmes informatiques.</p>
+
+        <h2>🛠️ Spécialités</h2>
+        <ul>
+            <li><strong>SLAM</strong> : Développement logiciel</li>
+            <li><strong>SISR</strong> : Réseaux et cybersécurité</li>
+        </ul>
+
+        <h2>📍 En Nouvelle-Calédonie</h2>
+        <p>Disponible dans plusieurs lycées (Jules Garnier, Grand Nouméa, Blaise Pascal).</p>
+
+        <a class="btn" href="#">En savoir plus</a>
+    </div>
+
+    <footer>
+        &copy; 2025 - BTS SIO NC - Design Informatique
+    </footer>
+</body>
+</html>
