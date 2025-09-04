@@ -2,10 +2,66 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>BTS SIO</title>
+    <title>Portfolio Wasso Wahuzue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Bienvenue sur le site du BTS SIO</h1>
-    <p>Le BTS Services Informatiques aux Organisations forme des professionnels de l'informatique.</p>
+    <nav class="tribal-nav">
+        <span class="nav-title">Portfolio Wasso Wahuzue</span>
+        <div class="nav-actions">
+            <button class="tribal-bubble" onclick="document.getElementById('contact-info').style.display='block'">Contact</button>
+        </div>
+    </nav>
+    <header class="tribal-header">
+        <h1>Wasso Wahuzue</h1>
+        <h2>Étudiant BTS SIO 1ère année</h2>
+        <p class="subtitle">Lycée Dick Ukeiwe, passionné par l'informatique et les technologies</p>
+    </header>
+    <main>
+        <section class="tribal-section">
+            <h3>À propos de moi</h3>
+            <p>
+                Passionné par l'informatique en tout genre, je poursuis mes études en BTS SIO au lycée Dick Ukeiwe.<br>
+                J'aime découvrir de nouvelle chose, créer des projets en équipe et relever des défis techniques.
+            </p>
+        </section>
+        <section class="tribal-section">
+            <h3>Compétences</h3>
+            <ul>
+                <li>Packet tracer, Switch Cisco, Réseau</li>
+                <li>Gestion de parc informatique</li>
+                <li>Travail en équipe, sociable</li>
+                <li>Virtualisation (Virtualbox)</li>
+            </ul>
+        </section>
+        <section class="tribal-section">
+            <h3>Scolarité</h3>
+            <p>
+                <strong>2025-2026 :</strong> BTS SIO (Services Informatiques aux Organisations), Lycée Dick Ukeiwe<br>
+                <strong>2022-2024 :</strong> Baccalauréat Professionnelle Système Numériques, Option Réseaux informatiques et systèmes communicants(RISC), Lycée du Mont-Dore
+            </p>
+        </section>
+        <section class="tribal-section">
+            <h3>Expérience professionnelle</h3>
+            <p>
+                <strong>EN TRAVAUX :</strong> Stage en entreprise<br>
+            </p>
+        </section>
+        <section class="tribal-section">
+            <h3>Projets</h3>
+            <ul>
+                <li>Portfolio personnel en HTML/CSS/JS</li>
+            </ul>
+        </section>
+    </main>
+    <div id="contact-info" class="tribal-popup" onclick="this.style.display='none'">
+        <strong>Téléphone :</strong> 849180<br>
+        <strong>Email :</strong> wassowahuzue@gmail.com
+        <div class="close-popup">Fermer</div>
+    </div>
+    <footer class="tribal-footer">
+        <span>&copy; 2025 Wasso Wahuzue - Nouvelle-Calédonie</span>
+    </footer>
 </body>
 </html>
